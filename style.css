@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+   /* BODY */
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #141e30,
+        #243b55
+    );
+
+    min-height: 100vh;
+}
+
+
+   /* MAIN CONTAINER */
+
+.main-container {
+    width: 100%;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px;
+}
+
+
+   /* REGISTRATION BOX */
+
+.registration-box {
+    width: 900px;
+
+    max-width: 100%;
+
+    min-height: 600px;
+
+    display: flex;
+
+    background-color: white;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+
+   /* LEFT SIDE */
+
+.left-side {
+    width: 40%;
+
+    background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+
+    color: white;
+
+    padding: 50px 35px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* Left heading */
+
+.left-side h1 {
+    font-size: 32px;
+
+    margin-bottom: 20px;
+}
+
+
+/* Left paragraph */
+
+.left-side p {
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+
+/* Student icon */
+
+.student-icon {
+    font-size: 90px;
+}
+
+
+   /* RIGHT SIDE */
+
+.right-side {
+    width: 60%;
+
+    padding: 40px;
+}
+
+
+/* Heading */
+
+.right-side h2 {
+    color: #333;
+
+    font-size: 28px;
+
+    margin-bottom: 5px;
+}
+
+
+/* Small text */
+
+.small-text {
+    color: #777;
+
+    margin-bottom: 25px;
+}
+
+
+   /* FORM */
+
+form {
+    width: 100%;
+}
+
+
+/* Labels */
+
+form > label {
+    display: block;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    color: #333;
+
+    margin-bottom: 7px;
+
+    margin-top: 12px;
+}
+
+
+/* Input */
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+
+    height: 45px;
+
+    padding: 10px 14px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+
+/* Input focus */
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border: 2px solid #667eea;
+
+    box-shadow:
+        0 0 5px rgba(102, 126, 234, 0.3);
+}
+
+
+   /* GENDER */
+
+.gender-box {
+    display: flex;
+
+    gap: 30px;
+
+    margin-top: 8px;
+
+    margin-bottom: 10px;
+}
+
+
+.radio-label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    font-weight: normal;
+
+    cursor: pointer;
+}
+
+
+.radio-label input {
+    width: 17px;
+
+    height: 17px;
+}
+
+
+   /* BUTTON */
+
+.main-button {
+    width: 100%;
+
+    height: 48px;
+
+    margin-top: 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Button hover */
+
+.main-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+   /* LINKS */
+
+.links {
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+
+.links p {
+    margin-top: 8px;
+
+    color: #555;
+
+    font-size: 14px;
+}
+
+
+.links a {
+    color: #667eea;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+
+   /* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .main-container {
+        padding: 15px;
+    }
+
+
+    .registration-box {
+        flex-direction: column;
+    }
+
+
+    .left-side {
+        width: 100%;
+
+        padding: 30px 20px;
+    }
+
+
+    .left-side h1 {
+        font-size: 25px;
+    }
+
+
+    .student-icon {
+        font-size: 60px;
+    }
+
+
+    .right-side {
+        width: 100%;
+
+        padding: 25px;
+    }
+
+}
+
+
+/* Small Mobile */
+
+@media (max-width: 450px) {
+
+    .right-side {
+        padding: 20px;
+    }
+
+
+    .gender-box {
+        gap: 15px;
+    }
+
+}
+
+   /* STUDENT IMAGE */
+/* ========================= */ */
+
+.student-image {
+    width: 280px;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    margin-top: 20px;
+
+    border: 4px solid white;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .student-image {
+        width: 220px;
+
+        height: 180px;
+    }
+
+}

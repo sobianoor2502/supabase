@@ -1,0 +1,254 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- Main Container -->
+
+    <div class="main-container">
+
+
+        <!-- Registration Box -->
+
+        <div class="registration-box">
+
+
+<!-- Left Side -->
+
+<div class="left-side">
+
+    <h1>
+        Student Management System
+    </h1>
+
+    <p>
+        Manage your student information
+        easily and quickly.
+    </p>
+
+
+    <!-- Student Image -->
+
+    <img
+        src="./image/img1.png"
+        alt="Student Image"
+        class="student-image"
+    >
+
+</div>
+
+
+            <!-- Right Side -->
+
+            <div class="right-side">
+
+                <h2>
+                    Student Registration
+                </h2>
+
+                <p class="small-text">
+                    Please fill all the information
+                </p>
+
+
+                <!-- Form -->
+
+                <form id="studentRegistration">
+
+
+                    <!-- First Name -->
+
+                    <label for="firstName">
+                        First Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="firstName"
+                        name="firstname"
+                        placeholder="Enter first name"
+                    >
+
+
+                    <!-- Last Name -->
+
+                    <label for="lastName">
+                        Last Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="lastName"
+                        name="lastname"
+                        placeholder="Enter last name"
+                    >
+
+
+                    <!-- Address -->
+
+                    <label for="address">
+                        Address
+                    </label>
+
+                    <input
+                        type="text"
+                        id="address"
+                        name="address"
+                        placeholder="Enter address"
+                    >
+
+
+                    <!-- Gender -->
+
+                    <label>
+                        Gender
+                    </label>
+
+                    <div class="gender-box">
+
+                        <label class="radio-label">
+
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="Female"
+                            >
+
+                            Female
+
+                        </label>
+
+
+                        <label class="radio-label">
+
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="Male"
+                            >
+
+                            Male
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- Course -->
+
+                    <label for="course">
+                        Course
+                    </label>
+
+                    <input
+                        type="text"
+                        id="course"
+                        name="course"
+                        placeholder="Enter course"
+                    >
+
+
+                    <!-- Email -->
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter email"
+                    >
+
+
+                    <!-- Password -->
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter password"
+                    >
+
+
+                    <!-- Submit -->
+
+                    <button
+                        type="submit"
+                        class="main-button"
+                    >
+                        Register Student
+                    </button>
+
+
+                </form>
+
+
+                <!-- Account Links -->
+
+                <div class="links">
+
+                    <p>
+                        Already have an account?
+                        <a href="signIn.html">
+                            Sign In
+                        </a>
+                    </p>
+
+
+                    <p>
+                        Don't have an account?
+                        <a href="signUp.html">
+                            Sign Up
+                        </a>
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Supabase -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+
+    <!-- SweetAlert -->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <!-- JavaScript -->
+
+    <script src="app.js"></script>
+
+
+</body>
+
+</html>
+```

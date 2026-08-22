@@ -1,0 +1,151 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign In</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <div class="main-container">
+
+
+        <div class="registration-box">
+
+
+            <!-- Left Side -->
+
+            <div class="left-side">
+
+                <h1>
+                    Welcome Back!
+                </h1>
+
+                <p>
+                    Sign in to access
+                    Student Management System.
+                </p>
+
+                <div class="student-icon">
+                    🎓
+                </div>
+
+            </div>
+
+
+            <!-- Right Side -->
+
+            <div class="right-side">
+
+                <h2>
+                    Sign In
+                </h2>
+
+                <p class="small-text">
+                    Enter your account details
+                </p>
+
+
+                <!-- Form -->
+
+                <form id="signInForm">
+
+
+                    <!-- Email -->
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                    >
+
+
+                    <!-- Password -->
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                    >
+
+
+                    <!-- Button -->
+
+                    <button
+                        type="submit"
+                        class="main-button"
+                    >
+                        Sign In
+                    </button>
+
+
+                </form>
+
+
+                <!-- Links -->
+
+                <div class="links">
+
+                    <p>
+                        Don't have an account?
+                        <a href="signUp.html">
+                            Sign Up
+                        </a>
+                    </p>
+
+
+                    <p>
+                        <a href="index.html">
+                            Back to Registration
+                        </a>
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Supabase -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+
+    <!-- SweetAlert -->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <!-- JavaScript -->
+
+    <script src="signIn.js"></script>
+
+</body>
+
+</html>
+```
