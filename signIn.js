@@ -1,8 +1,3 @@
-
-// SUPABASE CONNECTION
-
-
-
 // Supabase URL
 
 const supabaseUrl =
