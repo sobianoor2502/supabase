@@ -1,9 +1,4 @@
-
-// SUPABASE CONNECTION
-
-
 // Supabase URL
-
 const supabaseUrl =
     "https://oibwlgsbbjlaavbflglb.supabase.co";
 
